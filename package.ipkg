@@ -12,3 +12,5 @@ homepage = "https://github.com/dannypsnl/idris-project"
 sourcedir = "src"
 builddir = "build"
 outputdir = "bin"
+
+main = Main
