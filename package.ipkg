@@ -1,7 +1,5 @@
 package idris-project
 
-modules = Foo
-
 readme = "README.md"
 version = "v0.0.0"
 license = "MIT"
@@ -15,3 +13,5 @@ outputdir = "bin"
 
 executable = idris-project
 main = Main
+
+modules = Proof
