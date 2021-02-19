@@ -12,9 +12,17 @@ plus_reduces_S Z m = cong S Refl
 -- cong: congruence, take `f` to show `a = b` iff `(f a) = (f b)`
 plus_reduces_S (S k) m = cong S (plus_reduces_S k m)
 
+plus_commutes_Z : (m : Nat) -> m = plus m Z
+plus_commutes_Z 0 = Refl
+plus_commutes_Z (S k) = cong S (plus_commutes_Z k)
+
+plus_commutes_S : (k : Nat) -> (m : Nat) -> S (plus m k) = plus m (S k)
+plus_commutes_S k 0 = Refl
+plus_commutes_S k (S j) = cong S (plus_commutes_S k j)
+
 plus_commutes : (n, m : Nat) -> n + m = m + n
-plus_commutes Z m = ?m
-plus_commutes (S n) m = ?m2
+plus_commutes Z m = (plus_commutes_Z m)
+plus_commutes (S k) m = rewrite plus_commutes k m in (plus_commutes_S k m)
 
 sym : forall x, y . (0 rule : x = y) -> y = x
 sym Refl = Refl
