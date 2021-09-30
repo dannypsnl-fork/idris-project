@@ -14,4 +14,4 @@ outputdir = "bin"
 executable = idris-project
 main = Main
 
-modules = Proof
+modules = IdrisProject

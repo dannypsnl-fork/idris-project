@@ -1,4 +1,4 @@
-module Proof
+module IdrisProject
 
 plus_reduces : (n : Nat) -> Z + n = n
 plus_reduces n = Refl
