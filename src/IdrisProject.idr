@@ -1,7 +1,7 @@
 module IdrisProject
 
-export
 ||| document
+export
 plus_reduces : (n : Nat) -> Z + n = n
 plus_reduces n = Refl
 
