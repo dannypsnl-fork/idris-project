@@ -1,9 +1,0 @@
-package idris-project-doc
-
-authors = "Lîm Tsú-thuàn"
-maintainers = "Lîm Tsú-thuàn"
-
-sourcedir = "doc"
-builddir = "build"
-
-modules = IdrisProject
